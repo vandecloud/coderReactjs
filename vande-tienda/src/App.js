@@ -4,12 +4,15 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Producto from './components/Producto'
 import Carrito from './components/Carrito'
+import'./components/styles.css';
+import'./components/animacion.css';
+import'./components/responsive.css';
 
 function App() {
  
 
  // Crear listado de productos
- const [productos, setProductos] = useState([
+ const [productos,] = useState([
    {id: 1, nombre: 'banana', precio: 20},
    {id: 2, nombre: 'Manzana', precio: 30},
    {id: 3, nombre: 'Pera', precio: 70},
