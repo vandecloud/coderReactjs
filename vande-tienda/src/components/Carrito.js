@@ -1,5 +1,5 @@
 import React from 'react';
-import'./carrito.css';
+import'./Carrito.css';
 import Producto from './Producto';  //reutilizamos el componente
 
 const  Carrito= ({carrito, agregarProducto}) => (

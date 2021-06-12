@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Producto.css";
 
 const Producto = ({producto, carrito, agregarProducto, productos}) => {
     
@@ -25,29 +26,34 @@ const Producto = ({producto, carrito, agregarProducto, productos}) => {
 
 
     return (
-
-        <div>
-            <h2>{nombre}</h2>
-            <p>${precio}</p>
-           
-            {productos
-            ?
-                (<button
-                type="button"
-                onClick={()=> seleccionarProducto (id)}
-                >Comprar</button>
-                )
-            :
-                
-                (<button
-                    type="button"
-                    onClick={()=> eliminarProducto (id)}
-                    >Eliminar</button>
-                )
-                
-            }
+        <div className="container-fluid">
+            <div className="">
+                <div className="card">
+                    <img src="..." className="card-img-top" alt="..."></img>
+                    <div className="card-body">
+                        <h2>{nombre}</h2>
+                        <p>${precio}</p>
+                    
+                        {productos
+                        ?
+                            (<button
+                            type="button"
+                            onClick={()=> seleccionarProducto (id)}
+                            >Comprar</button>
+                            )
+                        :
+                            
+                            (<button
+                                type="button"
+                                onClick={()=> eliminarProducto (id)}
+                                >Eliminar</button>
+                            )
+ 
+                        }
+                    </div>
+                </div>
+            </div>
         </div>
-
 
      );
 }
